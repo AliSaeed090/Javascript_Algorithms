@@ -1,6 +1,6 @@
 //Time complexity: O(logn)
 
-//Explanation: Binary Search only works on SORTED ARRAYS. It works by picking a halfway point in the array. It then checks if the element at the halway point is greater than or less than the specified searched value. The algorithms thn eliminates the half of the array that cannot hold the value from the search. So, for example, if the searched is greater than the value at the halfway point, the algorithm discards the lower half of the array from the search. The algorithm then picks the halfway point of the remaining array and repeats the process. It continues until the searched value equals to the value at the halfway point.
+//Explanation: Binary Search only works on SORTED ARRAYS. It works by picking a halfway point in the array. It then checks if the element at the halway point is greater than or less than the specified searched value. The algorithms thn eliminates the half of the array that cannot hold the value from the search (i.e. it only looks at the half that can hold the element). So, for example, if the searched value is greater than the value at the halfway point, the algorithm discards the lower half of the array from the search and only looks at the upper half. The algorithm then picks the halfway point of the remaining array and repeats the process. It continues until the searched value equals to the value at the halfway point.
 
 function binarySearch(arr, elem){
     let start = 0;
