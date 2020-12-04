@@ -1,7 +1,7 @@
 //Time Complexity: O(n^2)
 //Explanation: Similar to the bubble sort, but instead of placing large values in to sorted position (ath the end of the array), it places small values into sorted position (at the front of the array)
 
-function selection_sort(arr) {
+function selectionSort(arr) {
   for (let i = 0; i < arr.length; i++) {
     let lowest = i;
     for (j = i + 1; j < arr.length; j++) {
@@ -19,5 +19,5 @@ function selection_sort(arr) {
   return arr;
 }
 
-let res = selection_sort([9, 4, 1, 6, 3, 7, 2]);
+let res = selectionSort([9, 4, 1, 6, 3, 7, 2]);
 console.log(res);
